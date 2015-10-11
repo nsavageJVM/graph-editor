@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="180.0" prefWidth="350.0" styleClass="dialog" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <GridPane hgap="10.0" vgap="10.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="73.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.0" minWidth="10.0" prefWidth="197.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label text="S(V):" styleClass="label_dialog">
+                    <padding>
+                        <Insets bottom="10.0" left="20.0" right="10.0" top="10.0"/>
+                    </padding>
+                </Label>
+                <Label text="G(V):" styleClass="label_dialog" GridPane.rowIndex="1">
+                    <padding>
+                        <Insets bottom="10.0" left="20.0" right="10.0" top="10.0"/>
+                    </padding>
+                </Label>
+                <TextField fx:id="area" promptText="area block" GridPane.columnIndex="1"/>
+                <TextField fx:id="terminals" promptText="number terminal" GridPane.columnIndex="1"
+                           GridPane.rowIndex="1"/>
+            </children>
+            <BorderPane.margin>
+                <Insets/>
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="5.0" left="10.0" right="30.0" top="10.0"/>
+            </padding>
+        </GridPane>
+    </center>
+    <bottom>
+        <AnchorPane prefHeight="60.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="ok" defaultButton="true" disable="true" layoutX="141.0" layoutY="15.0"
+                        mnemonicParsing="false" onAction="#runKodres" prefWidth="90.0" styleClass="button_dialog"
+                        text="Ok"/>
+                <Button fx:id="cancel" cancelButton="true" layoutX="246.0" layoutY="15.0" mnemonicParsing="false"
+                        onAction="#closeDialog" prefWidth="90.0" styleClass="button_dialog" text="Cancel"/>
+            </children>
+            <BorderPane.margin>
+                <Insets/>
+            </BorderPane.margin>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

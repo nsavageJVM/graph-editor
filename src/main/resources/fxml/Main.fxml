@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.kikul.controller.RootLayout?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0"
+            prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.kikul.controller.AppController">
+    <top>
+        <AnchorPane prefHeight="87.0" prefWidth="720.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar prefHeight="32.0" prefWidth="720.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                         AnchorPane.topAnchor="0.0">
+                    <menus>
+
+                        <Menu mnemonicParsing="false" text="_File">
+                            <items>
+                                <MenuItem fx:id="clear" mnemonicParsing="false"
+                                          text="Clear workspace"/>
+                                <MenuItem fx:id="open" mnemonicParsing="false" text="Open..."/>
+                                <MenuItem fx:id="save" mnemonicParsing="false" text="Save All"/>
+                                <MenuItem fx:id="random" mnemonicParsing="false"
+                                          text="Random graph"/>
+                                <SeparatorMenuItem/>
+                                <MenuItem fx:id="exit" mnemonicParsing="false" text="Exit"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="_Settings">
+                            <items>
+                                <Menu mnemonicParsing="false" text="Colors">
+                                    <items>
+                                        <RadioMenuItem fx:id="default_colors" mnemonicParsing="false" text="Default"/>
+                                        <RadioMenuItem fx:id="dark_colors" mnemonicParsing="false" text="Dark"/>
+                                    </items>
+                                </Menu>
+                                <RadioMenuItem fx:id="grid" mnemonicParsing="false" text="Grid"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Algorithm">
+                            <items>
+                                <MenuItem fx:id="kodres" mnemonicParsing="false" text="Kodres"/>
+                                <MenuItem fx:id="decomposition" mnemonicParsing="false" text="Mult kodres"/>
+                                <SeparatorMenuItem/>
+                                <MenuItem fx:id="dfs" mnemonicParsing="false" text="DFS"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <ToolBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="55.0" prefWidth="720.0"
+                         AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                         AnchorPane.topAnchor="33.0">
+                    <items>
+                        <Separator orientation="VERTICAL" prefHeight="30.0" prefWidth="1.0"/>
+                        <Button fx:id="toolClear" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0">
+                            <tooltip>
+                                <Tooltip text="Clear workspace"/>
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="toolOpen" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0">
+                            <tooltip>
+                                <Tooltip text="Open . . . "/>
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="toolSave" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0">
+                            <tooltip>
+                                <Tooltip text="Save graph"/>
+                            </tooltip>
+                        </Button>
+                        <Separator orientation="VERTICAL" prefHeight="30.0" prefWidth="1.0"/>
+                        <Button fx:id="toolRandom" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0">
+                            <tooltip>
+                                <Tooltip text="Random graph"/>
+                            </tooltip>
+                        </Button>
+                        <Separator orientation="VERTICAL" prefHeight="30.0" prefWidth="1.0"/>
+                        <Button fx:id="toolKodres" text="K" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0">
+                            <tooltip>
+                                <Tooltip text="Kodres algorithm"/>
+                            </tooltip>
+                        </Button>
+                    </items>
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                </ToolBar>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <RootLayout fx:id="rootLayout"/>
+    </center>
+</BorderPane>

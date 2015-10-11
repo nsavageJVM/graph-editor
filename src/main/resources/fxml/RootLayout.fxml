@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.kikul.controller.tools.Zoom?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.*?>
+<fx:root fx:id="root_pane" focusTraversable="true" minHeight="320.0" minWidth="480.0" prefHeight="320.0"
+         prefWidth="480.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8"
+         xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <SplitPane fx:id="base_pane" dividerPositions="0.5" focusTraversable="false" maxHeight="-Infinity"
+                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="480.0"
+                   styleClass="pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <ScrollPane fitToHeight="true" hbarPolicy="NEVER" maxWidth="-Infinity" minWidth="-Infinity"
+                            nodeOrientation="LEFT_TO_RIGHT" prefWidth="120.0" styleClass="left-panel">
+                    <content>
+                        <VBox fx:id="left_pane" alignment="TOP_CENTER" prefWidth="120.0" styleClass="left-panel"/>
+                    </content>
+                </ScrollPane>
+
+                <ScrollPane fx:id="scroll" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308"
+                            maxWidth="1.7976931348623157E308" pannable="true">
+                    <content>
+                        <Zoom fx:id="zoom">
+                            <children>
+                                <AnchorPane fx:id="right_pane" minHeight="-Infinity" minWidth="-Infinity"
+                                            styleClass="right-panel"/>
+                            </children>
+                        </Zoom>
+                    </content>
+                </ScrollPane>
+            </items>
+        </SplitPane>
+    </children>
+</fx:root>

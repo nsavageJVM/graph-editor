@@ -1,0 +1,93 @@
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+    -fx-background-color: #3C3F41;
+}
+
+.right-panel {
+    -fx-background-color: #383838;
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.7), 6, 0.0, 0, 2);
+}
+
+.left-panel {
+    -fx-background-color: #3C3F41;
+    -fx-font-family: "Arial";
+    -fx-font-size: 15;
+    -fx-padding: 5 0 0 0;
+}
+
+.left-panel .label {
+    -fx-padding: 10 0 0 0;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.4), 5, 0.0, 0, 1);
+}
+
+.menu-bar {
+    -fx-background-color: #3C3F41;
+    -fx-border-width: 0;
+    -fx-effect: dropshadow(two-pass-box, black, 5, .2, 0, 0);
+}
+
+.menu:hover, .menu:showing {
+    -fx-background-color: #4B6EAF;
+}
+
+.context-menu {
+    -fx-background-color: #3C3F41;
+}
+
+.menu-bar .label {
+    -fx-text-fill: #ffffff;
+}
+
+.menu-item:focused {
+    -fx-background-color: #4B6EAF;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #ffffff;
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #3C3F41;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+}
+
+.tool-bar {
+    -fx-font-family: "Arial Black";
+    -fx-base: #3C3F41;
+    -fx-font-size: 14pt;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: .5em 0.9em .5em 0.416667em;
+    -fx-effect: dropshadow(two-pass-box, black, 8, .2, 0, 0);
+}
+
+.tool-bar .button {
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-padding: 0.3em 1.133333em 0.3em 1.133333em;
+}
+
+.pane {
+    -fx-background-color: #3C3F41;
+    -fx-border-width: 0;
+}
+
+.dialog {
+    -fx-background-color: #383838;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: #ffffff;
+    /*-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );*/
+}
+
+.button_dialog {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-base: #3C3F41;
+    -fx-effect: dropshadow(two-pass-box, black, 4, .2, 0, 0);
+    -fx-padding: 5 10 5 10;
+}
+
+.label_dialog {
+    -fx-text-fill: white;
+}

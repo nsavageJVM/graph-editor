@@ -1,0 +1,71 @@
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+    -fx-background-color: #D4CDCA;
+}
+
+.right-panel {
+    -fx-background-color: #ffffff;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.left-panel {
+    -fx-background-color: #EDEFF1;
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 15;
+    -fx-padding: 5 0 0 0;
+}
+
+.left-panel .label {
+    -fx-padding: 10 0 0 0;
+    -fx-effect: dropshadow( three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+}
+
+.menu-bar {
+    -fx-background-color: #EDEFF1;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #E8E8E8;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+}
+
+.tool-bar {
+    -fx-font-family: "Arial Black";
+    -fx-base: #eee;
+    -fx-font-size: 14pt;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: .5em 0.9em .5em 0.416667em;
+    -fx-effect: dropshadow(two-pass-box,#3C3F41,5,.2,0,0);
+}
+
+.tool-bar .button{
+    -fx-font-weight: bold;
+    -fx-background-color: #ddd;
+    -fx-background-radius: 0;
+    -fx-padding: 0.3em 1.133333em 0.3em 1.133333em;
+}
+
+.tool-bar .button:hover{
+    -fx-background-color: #0096C9;
+}
+
+.pane {
+    -fx-background-color: #EDEFF1;
+    -fx-border-width: 0;
+}
+
+.dialog {
+    -fx-background-color: #E8E8E8;
+    -fx-font-family: "Arial Black";
+}
+
+.button_dialog {
+    -fx-font-size: 16px;
+    -fx-base: #eee;
+    -fx-effect: dropshadow(two-pass-box,#3C3F41,5,.2,0,0);
+    -fx-padding: 5 10 5 10;
+}
