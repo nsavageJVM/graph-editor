@@ -142,8 +142,8 @@ public class AppController implements Initializable {
             throw new GraphEditorException(EditorResources.MSG_ERROR_GLOBAL_DOES_NOT_HAVE_LINK);
         else if (jointLinkIsLessTwo())
             throw new GraphEditorException(EditorResources.MSG_ERROR_JOINT_HAVE_LESS_TWO_CONNECTIONS);
-        else if (globalLinkIsNotNode())
-            throw new GraphEditorException(EditorResources.MSG_ERROR_GLOBAL_LINKS_IS_NOT_NODE);
+//        else if (globalLinkIsNotNode())
+//            throw new GraphEditorException(EditorResources.MSG_ERROR_GLOBAL_LINKS_IS_NOT_NODE);
     }
 
     private boolean nodesLinkIsEmpty() {
