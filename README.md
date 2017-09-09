@@ -21,15 +21,4 @@
 ### Графический интерфейс пользователя
 
 ![alt tag](https://github.com/kikul/graph-editor/blob/master/src/main/resources/images/github/all_default_menu.png)
-![alt tag](https://github.com/kikul/graph-editor/blob/master/src/main/resources/images/github/all_dark_menu.png)
-
-### Сетка в рабочем пространстве
-
-![alt tag](https://github.com/kikul/graph-editor/blob/master/src/main/resources/images/github/all_default_grid.png)
 ![alt tag](https://github.com/kikul/graph-editor/blob/master/src/main/resources/images/github/all_dark_grid.png)
-
-### Диалог с пользователем
-
-![alt tag](https://github.com/kikul/graph-editor/blob/master/src/main/resources/images/github/dialog.png)
-
-![alt tag](https://github.com/kikul/graph-editor/blob/master/src/main/resources/images/github/error.png)
